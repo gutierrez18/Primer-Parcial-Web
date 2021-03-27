@@ -15,10 +15,17 @@
                     <label>Primer Apellido</label>
                     <input type="text" name="primerApellido" [(ngModel)]="persona.primerApellido" class="form-control" />
                 </div>
-                <div class="form-group">
-                    <label>Grupo sisben</label>
-                    <input type="text" name="grupoSisben" [(ngModel)]="persona.grupoSisben " class="form-control" />
-                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">Grupo sisben</label>
+                  <select  id="inputState" name="grupoSisben" [(ngModel)]="persona.grupoSisben" class="form-control" >
+                    <option>seleccionar...</option>
+                    <option >A</option>
+                    <option >B</option>
+                    <option >C</option>
+                    <option >D</option>
+                  </select>
+
+              </div>
                 <div class="form-group">
                     <label>Valor Matricula</label>
                     <input type="number" name="valorMatricula" [(ngModel)]="persona.valorMatricula" class= "form-control" />
